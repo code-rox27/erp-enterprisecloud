@@ -4,6 +4,9 @@ import { ProtectedRoute } from './ProtectedRoute';
 import { MainLayout } from '../layouts/MainLayout';
 import { LoginPage } from '../modules/auth/pages/LoginPage';
 import { DashboardPage } from '../modules/dashboard/pages/DashboardPage';
+import { ComprasPage } from '../modules/compras/pages/ComprasPage';
+import { InventarioPage } from '../modules/inventario/pages/InventarioPage';
+import { ProveedoresPage } from '../modules/proveedores/pages/ProveedoresPage';
 import { VentasPage } from '../modules/ventas/pages/VentasPage';
 
 export const AppRouter = () => {
@@ -20,6 +23,9 @@ export const AppRouter = () => {
               <Route index element={<Navigate to="/dashboard" replace />} />
               <Route path="dashboard" element={<DashboardPage />} />
               <Route path="ventas" element={<VentasPage />} />
+              <Route path="compras" element={<ComprasPage />} />
+              <Route path="inventario" element={<InventarioPage />} />
+              <Route path="proveedores" element={<ProveedoresPage />} />
 
               <Route
                 path="*"
