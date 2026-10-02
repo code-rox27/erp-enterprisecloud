@@ -1,12 +1,6 @@
-import { BrowserRouter } from 'react-router-dom'
-import { AppShell } from './layouts/AppShell'
-
+import { AppRouter } from './routes/AppRouter';
 function App() {
-  return (
-    <BrowserRouter>
-      <AppShell />
-    </BrowserRouter>
-  )
+  return <AppRouter />;
 }
 
-export default App
+export default App;
