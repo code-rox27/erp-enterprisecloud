@@ -29,6 +29,10 @@ export interface Proveedor {
   estado: EstadoProveedor;
   contactos: ContactoProveedor[];
   creadoEn: string; // ISO
+  /** Línea de crédito aprobada en PEN (0 = sin crédito). */
+  lineaCredito: number;
+  /** Plazo de pago en días (0 = contado). Define el vencimiento de sus facturas. */
+  plazoPagoDias: number;
 }
 
 /** Datos editables desde el formulario. */

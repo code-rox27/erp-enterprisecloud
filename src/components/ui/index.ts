@@ -10,3 +10,6 @@ export { Dialog } from './Dialog';
 export type { DialogProps, DialogSize } from './Dialog';
 export { Table } from './Table';
 export type { TableProps, TableColumn } from './Table';
+export { StatCard } from './StatCard';
+export { Tabs } from './Tabs';
+export type { TabItem } from './Tabs';

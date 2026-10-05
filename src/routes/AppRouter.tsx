@@ -8,6 +8,7 @@ import { ComprasPage } from '../modules/compras/pages/ComprasPage';
 import { InventarioPage } from '../modules/inventario/pages/InventarioPage';
 import { ProveedoresPage } from '../modules/proveedores/pages/ProveedoresPage';
 import { VentasPage } from '../modules/ventas/pages/VentasPage';
+import { CxCPage, CxPPage, CajaPage, BancosPage } from '../modules/finanzas';
 
 export const AppRouter = () => {
   return (
@@ -26,6 +27,15 @@ export const AppRouter = () => {
               <Route path="compras" element={<ComprasPage />} />
               <Route path="inventario" element={<InventarioPage />} />
               <Route path="proveedores" element={<ProveedoresPage />} />
+
+              {/* Finanzas */}
+              <Route path="finanzas">
+                <Route index element={<Navigate to="cxc" replace />} />
+                <Route path="cxc" element={<CxCPage />} />
+                <Route path="cxp" element={<CxPPage />} />
+                <Route path="caja" element={<CajaPage />} />
+                <Route path="bancos" element={<BancosPage />} />
+              </Route>
 
               <Route
                 path="*"
